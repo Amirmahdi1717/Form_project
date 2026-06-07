@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>Document</title>
+</head>
+<body>
+    <section id="mainlogin_section">
+        <h2 class="title">ورود کاربر</h2>
+        <p class="par">اطلاعات خود را به منظور ورود به سیستم وارد نمایید</p>
+        <form name="loginform" method="dialog" action="#" onsubmit="handleloginsubmit()"> 
+            <div>
+             <input  type="text" name="userName" placeholder="نام کاربری"
+               id="loginform_username" onkeyup="document.getElementById('username_errormessage').innerHTML = ''" autocomplete="off">
+             <label for="loginform_username">نام کاربری</label>
+             <p id="username_errormessage"></p>
+            </div>
+            
+            <div>
+             <input type="password" name="password" id="loginform_password" placeholder="گذرواژه" onkeyup="document.getElementById('password_errormessage').innerHTML = ''">
+             <label for="loginform_password">گذرواژه</label>
+             <p id="password_errormessage"></p>
+            </div>
+            <button type="submit">ورود</button> 
+            <p class="fpassword">فراموشی رمز عبور</p>
+
+        </form>
+    </section>
+<script src="{% static 'script.js' %}"></script>    
+</body>
+</html>

@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "byekan";
+    src:url("/fonts/Yekan.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "byekan" , "Arial" , "sens-serif";
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: blueviolet;
+
+
+}
+
+#mainlogin_section {
+    width: 350px;
+    height: 500px;
+    box-shadow: 3px 4px 15px 1px black , -3px -4px 25px 1px #ffffff;
+    background-color:darkgray;
+    border-radius: 8px;
+    border: 2px solid wheat;
+    box-shadow: 0px 0px 10px white , 0px 0px 16px white inset;
+}
+
+#mainlogin_section .title {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 50px;
+    font-weight: bold;
+
+}
+
+#mainlogin_section .par {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+
+}
+
+#mainlogin_section > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+
+}
+
+#mainlogin_section > form > div {
+    width: 80%;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 12px;
+    /* box-shadow: 0px 0px 10px black; */
+
+}
+
+#mainlogin_section > form > div > input {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    font-family: "Arial";
+}
+
+#mainlogin_section > form > div > label {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -60% );
+    font-size: 12px;
+    font-weight:bold ;
+    padding: 2px 8px;
+    background-color:darkgrey;
+}
+
+
+#mainlogin_section > form > button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px 30px;
+    color: #ffffff;
+    user-select: none;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px black, 0px 0px 9px white , 0px 0px 4px white inset ;
+    transform: scale(1);
+    filter: brightness(1);
+    transition-property: transform , filter , border-radius;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    /* box-shadow: 2px 2px 10px black; */
+
+}
+
+#mainlogin_section > form > button:hover {
+    transform: scale(1.1);
+    filter: brightness(78%);
+    border-radius: 48%;
+
+}
+
+#mainlogin_section > form > button:active{
+    transform: scale(97%);
+}
+
+#username_errormessage , #password_errormessage{
+    direction: rtl;
+    margin-top: 4px;
+    font-size: 12px;
+    color: red;
+    font-weight : bold
+}
+
+#mainlogin_section > form > .fpassword {
+    position: relative;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transform: scale(1);
+    filter: brightness(1);
+    transition: all 0.3s ease;
+
+}
+
+#mainlogin_section > form > .fpassword:hover {
+    transition: all 0.2s ease;
+    text-decoration: underline;
+}
+
+#mainlogin_section > form > .fpassword:active {
+    transition: all 0.3s ease;
+    transform: scale(86%);
+}
